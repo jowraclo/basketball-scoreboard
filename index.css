@@ -33,7 +33,7 @@ body {
 }
 
 #home-score,
-#guest-score {
+#away-score {
     display: flex;
     justify-content: center;
     align-items: center;
