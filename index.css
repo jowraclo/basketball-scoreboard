@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url('/CursedTimerULiL.woff2') format('woff2'),
+        url('/CursedTimerULiL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    width: 576px;
+    height: 386px;
+    background-color: #1B244A;
+    border: 6px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+.team {
+    margin: 28px 0 12px 0;
+    color: #EEEEEE;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#home-score,
+#guest-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 12px 0;
+    width: 155px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: black;
+    color: brown;
+    font-family: 'Cursed Timer ULiL', monospace;
+    font-size: 70px;
+}
+
+.add-btn {
+    margin: 2px;
+    width: 45px;
+    height: 45px;
+    background-color: inherit;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 6px;
+    font-family: 'Cursed Timer ULil', monospace;
+}
+
+#period {
+    margin: 28px 0 12px 0;
+    color: #FCD34D;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+}
+
+#period-No {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+    width: 74px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: black;
+    color: brown;
+    font-family: 'Cursed Timer ULiL', monospace;
+    font-size: 35px;
+}
+
+#newGame-btn {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+    width: 152px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: brown;
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
