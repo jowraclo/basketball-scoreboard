@@ -1,18 +1,18 @@
 let home = 0
-let guest = 0
+let away = 0
 let period = 0
 
 let perionNo = document.getElementById("period-No")
 let homeScore = document.getElementById("home-score")
-let guestScore = document.getElementById("guest-score")
+let awayScore = document.getElementById("away-score")
 
 function newGame() {
     home = 0
-    guest = 0
+    away = 0
     period = 0
     perionNo.textContent = period
     homeScore.textContent = home
-    guestScore.textContent = guest
+    awayScore.textContent = away
 }
 
 function addPeriodNo() {
@@ -35,18 +35,18 @@ function addPointHome3() {
     homeScore.textContent = home
 }
 
-function addPointGuest1() {
-    guest += 1
-    guestScore.textContent = guest
+function addPointAway1() {
+    away += 1
+    awayScore.textContent = away
 }
 
-function addPointGuest2() {
-    guest += 2
-    guestScore.textContent = guest
+function addPointAway2() {
+    away += 2
+    awayScore.textContent = away
 }
 
-function addPointGuest3() {
-    guest += 3
-    guestScore.textContent = guest
+function addPointAway3() {
+    away += 3
+    awayScore.textContent = away
 }
 
