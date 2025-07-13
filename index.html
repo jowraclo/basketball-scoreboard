@@ -1,11 +1,15 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <title>Basketball Scoreboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="container">
             <div>
-                <h3 class="team">HOME</h3>
+                <h3 class="team" id="home-team">HOME</h3>
                 <h2 id="home-score">0</h2>
                     <div>
                         <button class="add-btn" onclick="addPointHome1()">+1</button>
@@ -24,7 +28,7 @@
                     </div>
             </div>
             <div>
-                <h3 class="team">AWAY</h3>
+                <h3 class="team" id="away-team">AWAY</h3>
                 <h2 id="away-score">0</h2>
                     <div>
                         <button class="add-btn" onclick="addPointAway1()">+1</button>
