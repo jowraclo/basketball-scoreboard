@@ -16,6 +16,7 @@ function newGame() {
     perionNo.textContent = period
     homeScore.textContent = home
     awayScore.textContent = away
+    lead()
 }
 
 function addPeriodNo() {
@@ -23,6 +24,12 @@ function addPeriodNo() {
     perionNo.textContent = period
 }
 
+function subtractPeriodNo() {
+    if (period > 0) {
+        period -= 1
+        perionNo.textContent = period
+    }
+}
 function lead() {
     if (home > away) {
         homeTeam.style.color = "#00FF00" // green
@@ -54,6 +61,30 @@ function addPointHome3() {
     lead()
 }
 
+function subtractPointHome1() {
+    if (home > 0) {
+        home -= 1
+        homeScore.textContent = home
+        lead()
+    }
+}
+
+function subtractPointHome2() {
+    if (home > 1) {
+        home -= 2
+        homeScore.textContent = home
+        lead()
+    }
+}
+
+function subtractPointHome3() {
+    if (home > 2) {
+        home -= 3
+        homeScore.textContent = home
+        lead()
+    }
+}
+
 function addPointAway1() {
     away += 1
     awayScore.textContent = away
@@ -70,4 +101,28 @@ function addPointAway3() {
     away += 3
     awayScore.textContent = away
     lead()
+}
+
+function subtractPointAway1() {
+    if (away > 0) {
+        away -= 1
+        awayScore.textContent = away
+        lead()
+    }
+}
+
+function subtractPointAway2() {
+    if (away > 1) {
+        away -= 2
+        awayScore.textContent = away
+        lead()
+    }
+}
+
+function subtractPointAway3() {
+    if (away > 2) {
+        away -= 3
+        awayScore.textContent = away
+        lead()
+    }
 }
